@@ -88,6 +88,16 @@ HAVING COUNT([Waybill]) > 1
   WHERE ISNUMERIC([Parcel KG]) = 0
 
 
+  SELECT ISNUMERIC([Sales amount]), [Customer ID] , [Order Date]
+  FROM [AdventureWorks2014].[Prago].[Parcles_Staging]
+  WHERE ISNUMERIC([Sales amount]) = 0
+   
+
+   SELECT *
+  FROM [AdventureWorks2014].[Prago].[Parcles_Staging]
+  WHERE ISNUMERIC([Sales amount]) = 0
+
+
     SELECT *
   FROM [AdventureWorks2014].[Prago].[Parcles_Staging]
   WHERE [Customer ID] NOT LIKE 'CUS%'
